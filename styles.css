@@ -5,7 +5,7 @@ html {
 body {
     font-family: 'Barlow', sans-serif;;
     background: white;
-    width: 1000px;
+    width: 80%;
     margin: 0 auto;
     color: rgb(49, 46, 46);
 }
@@ -49,13 +49,15 @@ header h1 {
 }
 
 main {
-    width: 680px;
+    /* target / context = result */
+    /* 680 / 1000 = 0.68 */
+    width: 68%;
     display: inline-block;
     padding: 10px;
 }
 
 aside {
-    width: 270px;
+    width: 27%;
     display: inline-block;
     vertical-align: top;
     padding: 10px;
@@ -65,13 +67,15 @@ aside {
     /* border-box makes the width declared be the total width including margin/boarder/padding */
     box-sizing: border-box;
     border: 1px solid grey;
-    width: 200px;
+    width: 30%;
     /* hidden is to keep image within width but will cut the image
     overflow: hidden;  */
     margin: 5px;
     padding: 5px;
     display: inline-block;
     text-align: center;
+    /* em is element's parent rem is root */
+    font-size: 1em;
 }
 
 img {
