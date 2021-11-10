@@ -5,15 +5,20 @@ html {
 body {
     font-family: 'Barlow', sans-serif;;
     background: white;
-    width: 80%;
+    /* width: 80%; */
     margin: 0 auto;
     color: rgb(49, 46, 46);
+    text-align: center;
 }
 
 header, footer {
     background-color: #333a40;
     color: white;
     padding: 20px 10px;
+}
+
+input[type="search"] {
+    width: 100%;
 }
 
 ul {
@@ -45,37 +50,39 @@ header h1, nav {
 }
 
 header h1 {
-    width: 65%;
+    /* width: 70%; */
+    width: 100%;
 }
 
-main {
-    /* target / context = result */
-    /* 680 / 1000 = 0.68 */
+/* main {
+    target / context = result
+    680 / 1000 = 0.68 
     width: 68%;
     display: inline-block;
     padding: 10px;
-}
+} */
 
-aside {
+/* aside {
     width: 27%;
     display: inline-block;
     vertical-align: top;
     padding: 10px;
-}
+} */
 
 .product {
     /* border-box makes the width declared be the total width including margin/boarder/padding */
     box-sizing: border-box;
     border: 1px solid grey;
-    width: 30%;
+    /* width: 30%; */
     /* hidden is to keep image within width but will cut the image
     overflow: hidden;  */
     margin: 5px;
     padding: 5px;
-    display: inline-block;
+    /* display: inline-block; */
     text-align: center;
-    /* em is element's parent rem is root */
-    font-size: 1em;
+    width: 100%;
+    /* em is element's parent rem is root
+    font-size: 1em; */
 }
 
 img {
@@ -158,4 +165,55 @@ th, td {
 
 tr:hover {
     background: #f5f5f5;
+}
+
+@media (min-width: 800px) {
+    input[type="search"] {
+        width: 40%;
+        margin-left: 2em;
+    }
+
+    .product {
+        display: inline-block;
+        width: 48%;
+    }
+}
+
+@media (min-width: 1000px) {
+    body {
+        text-align: left;
+    }
+
+    header h1 {
+        width: 60%;
+    }
+
+    main {
+    /* target / context = result
+    680 / 1000 = 0.68  */
+    width: 68%;
+    display: inline-block;
+    padding: 10px;
+    }
+
+    aside {
+        width: 27%;
+        display: inline-block;
+        vertical-align: top;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        max-width: 80%;
+    }
+
+    .product {
+        width: 30%
+    }
+
+    input[type="search"] {
+        width: 20%;
+    }
 }
