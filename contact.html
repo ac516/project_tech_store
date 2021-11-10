@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <title>Tech Store</title>
+    <title>Tech Store: Contact Us</title>
 </head>
 
 <body>
@@ -19,6 +20,7 @@
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
+        <input type="search" placeholder="search...">
     </header>
 
     <aside>
@@ -52,14 +54,16 @@
     <main>
         <h2>Contact Us</h2>
         <form action="" method="">
-            <div>
+            <div class="inline">
                 <label for="name">Name:</label> <input type="text" placeholder="Enter your name" id="name" name="name">
             </div>
-            <div>
-                <label for="email">Email</label>: <input type="email" placeholder="Enter your email" id="email" name="email">
+            <div class="inline">
+                <label for="email">Email:</label> <input type="email" placeholder="Enter your email" id="email"
+                    name="email">
             </div>
-            <div>
-                <label for="message">Message:</label> <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <div class="inline">
+                <label for="message">Message:</label> <textarea name="message" id="message" cols="30"
+                    rows="10"></textarea>
             </div>
 
             <!-- <div>
@@ -81,7 +85,7 @@
             </div> -->
 
             <!-- second type of select is datalist but check with https://caniuse.com/datalist to see if browser supports it -->
-            <div>
+            <div class="inline">
                 <label for="subject">Subject:</label>
                 <input type="text" list="subject" id="subject" placeholder="Enter your subject">
                 <datalist id="subjects">
@@ -120,8 +124,9 @@
                 <input type="reset">
                 <!-- <button type="submit">Submit</button> -->
             </div>
-
         </form>
+
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJAf9D3La1j4ARuwKZtGjgMXw&key=AIzaSyAQkUBfXmLtnqVsWSDktaLdIQYORtKrD1Y"></iframe>
 
     </main>
     <footer>

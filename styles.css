@@ -1,0 +1,157 @@
+html {
+    background: #f7f7f7;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;;
+    background: white;
+    width: 1000px;
+    margin: 0 auto;
+    color: rgb(49, 46, 46);
+}
+
+header, footer {
+    background-color: #333a40;
+    color: white;
+    padding: 20px 10px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    line-height: 30px;
+}
+
+a {
+    text-decoration: none;
+    /* inherits means it will take the color of the parent */
+    color: inherit;
+}
+
+a:hover {
+    color: #0e69e9;
+}
+
+header li {
+    display: inline;
+}
+
+header h1, nav {
+    display: inline-block;
+}
+
+header h1 {
+    width: 65%;
+}
+
+main {
+    width: 680px;
+    display: inline-block;
+    padding: 10px;
+}
+
+aside {
+    width: 270px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 10px;
+}
+
+.product {
+    /* border-box makes the width declared be the total width including margin/boarder/padding */
+    box-sizing: border-box;
+    border: 1px solid grey;
+    width: 200px;
+    /* hidden is to keep image within width but will cut the image
+    overflow: hidden;  */
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+.button {
+    padding: 10px;
+    /* padding top and bottom does not affect inline items only inline block */
+    display: inline-block;
+}
+
+.button:last-of-type {
+    background: #0e69e9;
+    color: white;
+}
+
+
+/* Product detail page */
+.product-detail {
+    width: 660px;
+}
+
+.product-detail img {
+    max-width: 50%;
+    float: left;
+}
+
+
+/* #position {
+    relative position the elelment where it normally be with the addtion of top bottom left or right values
+    absolute position the elelment out of the normal space to the html element or if you like you can set a parent element to have position: relative
+    fixed position the element is fixed to the screen
+    sticky position the element stays on screen when scroll past
+    position: relative;
+    top: 10px;
+    left: 10px;
+} */
+
+/* Contact us page */
+form {
+    padding: 10px;
+    margin: 10px 0;
+    width: 600px;
+}
+
+/* all the div element that is a direct child to form */
+form > div {
+    margin: 10px 0;
+}
+
+.inline label {
+    width: 100px;
+    /* width does not affect inline items only inline block */
+    display: inline-block;
+}
+
+input[type="text"], input[type="email"] textarea {
+    padding: 10px;
+    width: 400px;
+}
+
+/* Table */
+table {
+    width: 400px;
+    text-align: left;
+    margin: 20px 0;
+}
+
+caption {
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 1px dotted;
+    padding: 10px;
+}
+
+th, td {
+    padding: 10px;
+}
+
+tr:hover {
+    background: #f5f5f5;
+}
